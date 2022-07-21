@@ -1,0 +1,41 @@
+{
+  "users": [],
+  "categories": [
+    {
+      "name": "điện thoại ",
+      "id": 1
+    },
+    {
+      "name": "máy tính ",
+      "id": 2
+    },
+    {
+      "name": "tai nghe",
+      "id": 3
+    },
+    {
+      "name": "laptop",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "img": "http://res.cloudinary.com/dectee66b/image/upload/v1658413582/piml59anx2681dogw1hg.jpg",
+      "name": "Điện thoại giá rẻ",
+      "saleOffPrice": 250,
+      "feature": "Nhiều gam",
+      "description": "nhỏ , gọn dễ mang đi",
+      "categoryId": 2,
+      "id": 3
+    },
+    {
+      "img": "http://res.cloudinary.com/dectee66b/image/upload/v1658418509/g7ghd853ugzg3smxugjw.jpg",
+      "name": "điện thoại",
+      "saleOffPrice": 200,
+      "feature": "ewfewfewf",
+      "description": "èergegr",
+      "categoryId": 1,
+      "id": 4
+    }
+  ]
+}
