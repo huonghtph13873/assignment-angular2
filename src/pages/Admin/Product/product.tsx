@@ -20,8 +20,7 @@ interface DataType {
   saleOffPrice: number;
   feature: string;
   description: string;
-  // hidden: string;
-  // status: string;
+  descrip: string;
 }
 
 const ProductList = () => {
@@ -53,7 +52,6 @@ const ProductList = () => {
       title: "Đặc điểm",
       dataIndex: "feature",
       key: "feature",
-      render: (text) => <a>{text}</a>,
     },
     
     {
@@ -74,7 +72,7 @@ const ProductList = () => {
           <a>
             <Space>
               <DeleteOutlined
-                style={{ color: "red" }}
+                style={{ color: "blue" }}
                 onClick={() => {
                   onDelete(record.id as string);
                 }}
@@ -138,23 +136,8 @@ if(value === undefined){
         <Typography.Title level={2} style={{ margin: 0}}>
           Điện thoại
         </Typography.Title>
-        {/* <Space >
-          
-          <Select
-            style={{ width: "227%",margin:"15px 67px"}}
-            size="large"
-            placeholder="Phân loại"
-            onChange={handlechange}
-          >
-            {category.map((item, index) => (
-              <Option value={item.id} key={index}>
-                {item.name}
-              </Option>
-            ))}
-          </Select>
-        </Space> */}
         <Link to="/admin/product/add">
-          <Button type="dashed" shape="circle" icon={<PlusOutlined />} />
+          <h3>Thêm sản phẩm</h3>
         </Link>
       </Breadcrumb>
       <Space >
@@ -169,11 +152,11 @@ if(value === undefined){
             
           >
             
-            {category.map((item, index) => (
+            {/* {category.map((item, index) => (
               <Option value={item.id} key={index}>
                 {item.name}
               </Option>
-            ))}
+            ))} */}
           </Select>
         </Space>
       <Table columns={columns} dataSource={dataTable} />

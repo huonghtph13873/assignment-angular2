@@ -113,6 +113,14 @@ const AddProductPage = () => {
               <p>Thêm ảnh!</p>
             </Dragger>
           </Form.Item>
+          <Form.Item
+              name="descrip"
+              labelCol={{ span: 20 }}
+              label=""
+              rules={[{ required: true, message: "Mô tả ngắn" }]}
+            >
+              <TextArea name="descrip" placeholder="Mô tả ngắn " />
+            </Form.Item>
         </Col>
         <Col span={14}>
           <Typography.Title level={5}>Thông tin sản phẩm</Typography.Title><hr/>

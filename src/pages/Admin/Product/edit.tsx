@@ -200,8 +200,8 @@ const EditProduct: React.FC = () => {
                   >
                     <Option value="phone">Điện thoại</Option>
                     <Option value="laptop">Laptop</Option>
-                    <Option value="accessories" disabled>
-                      Phụ kiện
+                    <Option value="accessories">
+                      Tai nghe
                     </Option>
                     <Option value="tablet">Máy tính</Option>
                   </Select>
