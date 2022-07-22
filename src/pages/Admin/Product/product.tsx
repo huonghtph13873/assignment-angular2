@@ -43,6 +43,7 @@ const ProductList = () => {
         return <Image width={200} src={text} />;
       },
     },
+   
     {
       title: "Giá khuyến mãi",
       dataIndex: "saleOffPrice",
